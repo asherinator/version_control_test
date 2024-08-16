@@ -1,0 +1,35 @@
+guid: 0c6c7da4-a92d-4116-a101-5e146caf0303
+answer:
+  name: Total Revenue
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Revenue] [Color]"
+  answer_columns:
+  - name: Color
+  - name: Total Revenue
+  table:
+    table_columns:
+    - column_id: Color
+      show_headline: false
+    - column_id: Total Revenue
+      show_headline: false
+    ordered_column_ids:
+    - Color
+    - Total Revenue
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Color
+    - column_id: Total Revenue
+    axis_configs:
+    - x:
+      - Color
+      "y":
+      - Total Revenue
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Color\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"6069bd60-e947-4337-9df8-debfedbd484c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"512ae34c-e51e-4d36-8209-90394a53a129\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Color\"]}}]}"
+  display_mode: CHART_MODE
