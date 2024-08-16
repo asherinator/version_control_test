@@ -1,0 +1,38 @@
+guid: ba0705ad-fc66-416f-8ad4-9c68a2e8ac0d
+liveboard:
+  name: temp_liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Discount by Color
+      tables:
+      - id: Parameters WS
+        name: Parameters WS
+        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+      search_query: "[Discount] [Color]"
+      answer_columns:
+      - name: Color
+      - name: Total Discount
+      table:
+        table_columns:
+        - column_id: Color
+          show_headline: false
+        - column_id: Total Discount
+          show_headline: false
+        ordered_column_ids:
+        - Color
+        - Total Discount
+        client_state: ""
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Color
+        - column_id: Total Discount
+        axis_configs:
+        - x:
+          - Color
+          "y":
+          - Total Discount
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 6c0470b5-38f9-4875-aa68-4b513e5e6801
