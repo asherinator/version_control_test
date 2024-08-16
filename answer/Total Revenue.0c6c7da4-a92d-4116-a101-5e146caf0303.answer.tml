@@ -5,37 +5,31 @@ answer:
   - id: Parameters WS
     name: Parameters WS
     fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
-  search_query: "[Revenue] [Color] [Quantity]"
+  search_query: "[Revenue] [Color]"
   answer_columns:
   - name: Color
-  - name: Total Quantity
   - name: Total Revenue
   table:
     table_columns:
     - column_id: Color
-      show_headline: false
-    - column_id: Total Quantity
       show_headline: false
     - column_id: Total Revenue
       show_headline: false
     ordered_column_ids:
     - Color
     - Total Revenue
-    - Total Quantity
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
     type: COLUMN
     chart_columns:
     - column_id: Color
-    - column_id: Total Quantity
     - column_id: Total Revenue
     axis_configs:
     - x:
       - Color
       "y":
       - Total Revenue
-      - Total Quantity
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Quantity\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"1dc7e6f4-15f3-412e-9fc4-21d94117499e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"bd80b86e-9f31-4737-b048-d43dc846710a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Quantity\"],\"isOpposite\": true}},{\"id\": \"bfe20533-116a-45b5-9df1-2849d67501ba\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Color\"]}}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Revenue\",\"columnProperty\": {}},{\"columnId\": \"Color\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"6069bd60-e947-4337-9df8-debfedbd484c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Revenue\"],\"isOpposite\": false}},{\"id\": \"512ae34c-e51e-4d36-8209-90394a53a129\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Color\"]}}]}"
   display_mode: CHART_MODE
