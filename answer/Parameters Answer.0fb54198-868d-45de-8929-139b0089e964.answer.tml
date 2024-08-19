@@ -51,3 +51,5 @@ answer:
   parameter_values:
   - key: Date Param
     value: 10/16/1994
+  - key: Double List Param
+    value: "0.25"
