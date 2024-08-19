@@ -14,33 +14,33 @@ answer:
     name: Parameterized Commit Date Filter
     expr: "[Commit Date] = [Date Param]"
     was_auto_generated: false
-  search_query: "[Order Total Price] [Color]"
+  search_query: "[Color] [Discount]"
   answer_columns:
   - name: Color
-  - name: Total Order Total Price
+  - name: Total Discount
   table:
     table_columns:
     - column_id: Color
       show_headline: false
-    - column_id: Total Order Total Price
+    - column_id: Total Discount
       show_headline: false
     ordered_column_ids:
     - Color
-    - Total Order Total Price
+    - Total Discount
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
     type: COLUMN
     chart_columns:
     - column_id: Color
-    - column_id: Total Order Total Price
+    - column_id: Total Discount
     axis_configs:
     - x:
       - Color
       "y":
-      - Total Order Total Price
+      - Total Discount
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Order Total Price\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"d62d0a5c-1391-4002-97f7-ae58df556eda\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Order Total Price\"],\"isOpposite\": false}},{\"id\": \"652badb2-2c15-47a3-ba7f-ba1390b11e77\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Color\"]}}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a92f3af2-b2c6-4431-ba8b-6c8c25ff0ab9\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"005ff195-59fe-4589-85d1-a2450f4e2cc2\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Color\"]}}]}"
   display_mode: CHART_MODE
   parameter_values:
   - key: Date Param
