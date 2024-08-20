@@ -3,7 +3,7 @@ answer:
   name: Parameters Answer
   tables:
   - id: Parameters WS
-    name: Parameters WS new
+    name: Parameters WS wen
     fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
   formulas:
   - id: Adjusted Tax
