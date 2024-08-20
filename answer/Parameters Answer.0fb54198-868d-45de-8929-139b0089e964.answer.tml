@@ -14,22 +14,7 @@ answer:
     name: Parameterized Commit Date Filter
     expr: "[Commit Date] = [Date Param]"
     was_auto_generated: false
-  search_query: "[Color] [Discount]"
-  answer_columns:
-  - name: Color
-  - name: Total Discount
-  table:
-    table_columns:
-    - column_id: Color
-      show_headline: false
-    - column_id: Total Discount
-      show_headline: false
-    ordered_column_ids:
-    - Color
-    - Total Discount
-    client_state: ""
-    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-  chart:
+
     type: COLUMN
     chart_columns:
     - column_id: Color
