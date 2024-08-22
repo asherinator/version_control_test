@@ -59,3 +59,10 @@ table:
       column_type: ATTRIBUTE
     db_column_properties:
       data_type: VARCHAR
+  joins_with:
+  - name: PART - Part Details
+    destination:
+      name: Part Details
+      fqn: 7abdeb87-66ab-490f-95c6-6e849f07eb7c
+    "on": "([PART::Part PartKey] = [Part Details::Part PartKey])"
+    type: INNER

@@ -23,6 +23,7 @@ liveboard:
         - Color
         - Total Discount
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}]}"
       chart:
         type: COLUMN
         chart_columns:
@@ -34,5 +35,44 @@ liveboard:
           "y":
           - Total Discount
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Color\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"9f7e7a48-70c6-435a-939a-6bf7ed0f503c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"544b7c57-fec6-4dc3-aae2-441f3abadd17\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Color\"]}}]}"
       display_mode: CHART_MODE
     viz_guid: 6c0470b5-38f9-4875-aa68-4b513e5e6801
+  - id: Viz_2
+    answer:
+      name: Total Lo Discount by Lo Shipmode
+      tables:
+      - id: UNIQUE-asher.shaji-UI-WS
+        name: UNIQUE-asher.shaji-UI-WS
+        fqn: f8ef7efd-ba07-4745-bf48-cb0df821551c
+      search_query: "[Lo Discount] [Lo Shipmode]"
+      answer_columns:
+      - name: Lo Shipmode
+      - name: Total Lo Discount
+      table:
+        table_columns:
+        - column_id: Lo Shipmode
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Total Lo Discount
+          headline_aggregation: SUM
+        ordered_column_ids:
+        - Lo Shipmode
+        - Total Lo Discount
+        client_state: ""
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Lo Shipmode
+        - column_id: Total Lo Discount
+        axis_configs:
+        - x:
+          - Lo Shipmode
+          "y":
+          - Total Lo Discount
+        client_state: ""
+      display_mode: CHART_MODE
+    viz_guid: 62cf59e9-c7af-46f5-bb2a-1024d78d360c
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: MEDIUM
