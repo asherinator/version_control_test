@@ -5,31 +5,37 @@ answer:
   - id: UNIQUE-asher.shaji-UI-WS
     name: UNIQUE-asher.shaji-UI-WS
     fqn: f8ef7efd-ba07-4745-bf48-cb0df821551c
-  search_query: "[Lo Discount] [Lo Orderpriority]"
+  search_query: "[Lo Discount] [Lo Orderpriority] [Lo Custkey]"
   answer_columns:
   - name: Lo Orderpriority
+  - name: Total Lo Custkey
   - name: Total Lo Discount
   table:
     table_columns:
     - column_id: Lo Orderpriority
       headline_aggregation: COUNT_DISTINCT
+    - column_id: Total Lo Custkey
+      headline_aggregation: SUM
     - column_id: Total Lo Discount
       headline_aggregation: SUM
     ordered_column_ids:
     - Lo Orderpriority
     - Total Lo Discount
+    - Total Lo Custkey
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
     type: COLUMN
     chart_columns:
     - column_id: Lo Orderpriority
+    - column_id: Total Lo Custkey
     - column_id: Total Lo Discount
     axis_configs:
     - x:
       - Lo Orderpriority
       "y":
       - Total Lo Discount
+      - Total Lo Custkey
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Discount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"090c51bd-4c28-4963-a110-478c40d3cbec\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Discount\"],\"isOpposite\": false}},{\"id\": \"dbeaca41-2a92-4629-9a7c-e728b7ed0523\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Orderpriority\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Lo Discount\",\"color\": \"#2E75F0\"},{\"serieName\": \"a118b86f-8691-4618-a395-b2656d566cfb\",\"color\": \"#48D1E0\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Discount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Custkey\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4bacec23-ece8-44a5-8642-fd2d39c63b8d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Discount\"],\"isOpposite\": false}},{\"id\": \"f0769342-c158-4115-a371-4d151efa5e3c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Custkey\"],\"isOpposite\": true}},{\"id\": \"880d3fef-a60f-4790-b9ee-d1af002bd3f8\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Orderpriority\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Lo Discount\",\"color\": \"#2E75F0\"},{\"serieName\": \"a118b86f-8691-4618-a395-b2656d566cfb\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Lo Custkey\",\"color\": \"#48D1E0\"}]}"
   display_mode: CHART_MODE
