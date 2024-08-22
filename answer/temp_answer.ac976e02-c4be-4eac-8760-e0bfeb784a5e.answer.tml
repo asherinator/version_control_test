@@ -1,0 +1,41 @@
+guid: ac976e02-c4be-4eac-8760-e0bfeb784a5e
+answer:
+  name: temp_answer
+  tables:
+  - id: UNIQUE-asher.shaji-UI-WS
+    name: UNIQUE-asher.shaji-UI-WS
+    fqn: f8ef7efd-ba07-4745-bf48-cb0df821551c
+  search_query: "[Lo Discount] [Lo Orderpriority] [Lo Orderkey]"
+  answer_columns:
+  - name: Lo Orderpriority
+  - name: Total Lo Discount
+  - name: Total Lo Orderkey
+  table:
+    table_columns:
+    - column_id: Lo Orderpriority
+      headline_aggregation: COUNT_DISTINCT
+    - column_id: Total Lo Discount
+      headline_aggregation: SUM
+    - column_id: Total Lo Orderkey
+      headline_aggregation: SUM
+    ordered_column_ids:
+    - Lo Orderpriority
+    - Total Lo Discount
+    - Total Lo Orderkey
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: COLUMN
+    chart_columns:
+    - column_id: Lo Orderpriority
+    - column_id: Total Lo Discount
+    - column_id: Total Lo Orderkey
+    axis_configs:
+    - x:
+      - Lo Orderpriority
+      "y":
+      - Total Lo Discount
+      - Total Lo Orderkey
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Lo Orderpriority\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Discount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Total Lo Orderkey\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"44e29edd-7b42-4d25-9140-3543efd6ed1d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Discount\"],\"isOpposite\": false}},{\"id\": \"fec6679d-e7d8-4e3f-8c8c-3ac30eea0f39\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Lo Orderkey\"],\"isOpposite\": true}},{\"id\": \"6103a3ee-6fa8-4bec-b9a2-98b7adf4ac11\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Lo Orderpriority\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Lo Discount\",\"color\": \"#2E75F0\"},{\"serieName\": \"Total Lo Orderkey\",\"color\": \"#48D1E0\"}]}"
+  display_mode: CHART_MODE
