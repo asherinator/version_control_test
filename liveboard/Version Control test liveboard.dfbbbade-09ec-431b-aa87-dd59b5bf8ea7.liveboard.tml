@@ -1,6 +1,6 @@
 guid: dfbbbade-09ec-431b-aa87-dd59b5bf8ea7
 liveboard:
-  name: tsadmin's first Liveboard
+  name: Version Control test liveboard
   visualizations:
   - id: Viz_1
     answer:
@@ -38,3 +38,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"324e0bc5-9600-477b-9d4f-b96344aeba80\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"290d5f7e-74fd-4412-94f8-ab6d9540775c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Color\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#48D1E0\"}]}"
       display_mode: CHART_MODE
     viz_guid: 9c4eeb53-3848-463a-96e9-31f281fa5978
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: MEDIUM
