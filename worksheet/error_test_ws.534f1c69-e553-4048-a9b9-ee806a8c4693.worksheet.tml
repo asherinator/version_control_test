@@ -18,13 +18,13 @@ worksheet:
     properties:
       column_type: ATTRIBUTE
       index_type: DONT_INDEX
-  - name: Product Key
-    column_id: PRODUCT_1::PRODUCT_KEY
+  - name: Product Name
+    column_id: PRODUCT_1::PRODUCT_NAME
     properties:
       column_type: ATTRIBUTE
       index_type: DONT_INDEX
-  - name: Product Name
-    column_id: PRODUCT_1::PRODUCT_NAME
+  - name: Product Key
+    column_id: PRODUCT_1::PRODUCT_KEY
     properties:
       column_type: ATTRIBUTE
       index_type: DONT_INDEX
