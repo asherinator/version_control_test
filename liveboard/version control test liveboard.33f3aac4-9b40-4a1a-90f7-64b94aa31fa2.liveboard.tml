@@ -38,42 +38,6 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"48fda0a5-1171-44e4-8ced-5b723290a92d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"a16b77ab-80b3-4fdc-ab57-0d8fdbe489a5\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Color\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#747E8C\"}]}"
       display_mode: CHART_MODE
     viz_guid: b2a3c5e7-4e9f-4130-a55e-5ed65d6ba242
-  - id: Viz_2
-    answer:
-      name: Total Discount by Size
-      tables:
-      - id: Parameters WS
-        name: Parameters WS
-        fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
-      search_query: "[Discount] [Size]"
-      answer_columns:
-      - name: Size
-      - name: Total Discount
-      table:
-        table_columns:
-        - column_id: Size
-          headline_aggregation: COUNT_DISTINCT
-        - column_id: Total Discount
-          headline_aggregation: SUM
-        ordered_column_ids:
-        - Size
-        - Total Discount
-        client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
-      chart:
-        type: COLUMN
-        chart_columns:
-        - column_id: Size
-        - column_id: Total Discount
-        axis_configs:
-        - x:
-          - Size
-          "y":
-          - Total Discount
-        client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Size\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4cd63ea8-a095-48ef-ad99-e701f873cdba\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"b8492086-3bc8-46db-afee-22677d9096e9\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Size\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#FCC838\"}]}"
-      display_mode: CHART_MODE
-    viz_guid: ae13c5e8-d7b9-42e0-9f87-c318aac1b772
   layout:
     tiles:
     - visualization_id: Viz_1
