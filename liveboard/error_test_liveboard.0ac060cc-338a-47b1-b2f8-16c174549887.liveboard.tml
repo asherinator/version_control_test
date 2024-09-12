@@ -9,31 +9,26 @@ liveboard:
       - id: error_test_ws
         name: error_test_ws
         fqn: 534f1c69-e553-4048-a9b9-ee806a8c4693
-      search_query: "[Product Key] [Product Name]"
+      search_query: "[Product Key]"
       answer_columns:
       - name: Product Key
-      - name: Product Name
       table:
         table_columns:
         - column_id: Product Key
           headline_aggregation: COUNT_DISTINCT
-        - column_id: Product Name
-          headline_aggregation: COUNT_DISTINCT
         ordered_column_ids:
         - Product Key
-        - Product Name
         client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Product Key\",\"columnProperty\": {}}]}"
       chart:
-        type: SCATTER
+        type: KPI
         chart_columns:
         - column_id: Product Key
-        - column_id: Product Name
         axis_configs:
-        - x:
+        - "y":
           - Product Key
-          "y":
-          - Product Name
         client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Product Key\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7e34af5c-7c9a-40eb-ac0c-952be5e520a1\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Product Key\"],\"isOpposite\": false}},{\"id\": \"27329348-1c3f-425b-a914-2c63fb877e7f\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: TABLE_MODE
     viz_guid: e78f95ca-8075-4baf-b182-6a0f1d454b67
   layout:
