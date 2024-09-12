@@ -38,6 +38,42 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Brand1\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"e0694615-7b26-47f3-b042-9a0fd6c89c3a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"6b66ff7e-b641-450e-8b6d-23d75d8d6970\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Brand1\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#747E8C\"}]}"
       display_mode: CHART_MODE
     viz_guid: b2a3c5e7-4e9f-4130-a55e-5ed65d6ba242
+  - id: Viz_2
+    answer:
+      name: error_test_answer
+      tables:
+      - id: error_test_ws
+        name: error_test_ws
+        fqn: 534f1c69-e553-4048-a9b9-ee806a8c4693
+      search_query: "[Product Group Key] [Product Key]"
+      answer_columns:
+      - name: Product Group Key
+      - name: Product Key
+      table:
+        table_columns:
+        - column_id: Product Group Key
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Product Key
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Product Group Key
+        - Product Key
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Product Group Key
+        - column_id: Product Key
+        axis_configs:
+        - x:
+          - Product Group Key
+          "y":
+          - Product Key
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Group Key\",\"columnProperty\": {}},{\"columnId\": \"Product Key\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b310ee8c-2d86-477c-bb8d-661f6285d0b5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Product Key\"],\"isOpposite\": false}},{\"id\": \"43762bae-38d9-4a52-97ef-c1c27e360df4\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Group Key\"]}}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 7b74b9b5-34d9-4605-9d7f-36aa437312c5
   layout:
     tiles:
     - visualization_id: Viz_1
