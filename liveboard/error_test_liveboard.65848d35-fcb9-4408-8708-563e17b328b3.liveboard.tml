@@ -1,0 +1,40 @@
+guid: 65848d35-fcb9-4408-8708-563e17b328b3
+liveboard:
+  name: error_test_liveboard
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: error_test_answer
+      tables:
+      - id: error_test_ws
+        name: error_test_ws
+        fqn: 534f1c69-e553-4048-a9b9-ee806a8c4693
+      search_query: "[Product Group Key] [Product Key]"
+      answer_columns:
+      - name: Product Group Key
+      - name: Product Key
+      table:
+        table_columns:
+        - column_id: Product Group Key
+          headline_aggregation: COUNT_DISTINCT
+        - column_id: Product Key
+          headline_aggregation: COUNT_DISTINCT
+        ordered_column_ids:
+        - Product Group Key
+        - Product Key
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: SCATTER
+        chart_columns:
+        - column_id: Product Group Key
+        - column_id: Product Key
+        axis_configs:
+        - x:
+          - Product Group Key
+          "y":
+          - Product Key
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Group Key\",\"columnProperty\": {}},{\"columnId\": \"Product Key\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b310ee8c-2d86-477c-bb8d-661f6285d0b5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Product Key\"],\"isOpposite\": false}},{\"id\": \"43762bae-38d9-4a52-97ef-c1c27e360df4\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Group Key\"]}}]}"
+      display_mode: TABLE_MODE
+    viz_guid: 23955408-32eb-4071-ad77-6c2c612ca7f1
