@@ -35,17 +35,10 @@ liveboard:
           "y":
           - Product Key
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Group Key\",\"columnProperty\": {}},{\"columnId\": \"Product Key\",\"columnProperty\": {}},{\"columnId\": \"f734f47a-2f66-4467-bd01-df0942a5f54f\",\"columnProperty\": {}},{\"columnId\": \"4a42e6a2-b33e-4eb6-8674-97758cb5b034\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b310ee8c-2d86-477c-bb8d-661f6285d0b5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Product Key\"],\"isOpposite\": false}},{\"id\": \"43762bae-38d9-4a52-97ef-c1c27e360df4\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Group Key\"]}}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Group Key\",\"columnProperty\": {}},{\"columnId\": \"Product Key\",\"columnProperty\": {}},{\"columnId\": \"47c779c3-7a32-4739-931e-0d70e2885d37\",\"columnProperty\": {}},{\"columnId\": \"d39aa12e-50de-4d49-add7-32ce61e56052\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b310ee8c-2d86-477c-bb8d-661f6285d0b5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Product Key\"],\"isOpposite\": false}},{\"id\": \"43762bae-38d9-4a52-97ef-c1c27e360df4\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Group Key\"]}}]}"
       display_mode: TABLE_MODE
     viz_guid: 23955408-32eb-4071-ad77-6c2c612ca7f1
   layout:
-    tabs:
-    - name: Tab 1
-      description: ""
-      tiles:
-      - visualization_id: Viz_1
-        x: 0
-        "y": 0
-        height: 8
-        width: 12
-      id: 0777d8f3-9c0d-453d-85f8-347d42383ba6
+    tiles:
+    - visualization_id: Viz_1
+      size: LARGE
