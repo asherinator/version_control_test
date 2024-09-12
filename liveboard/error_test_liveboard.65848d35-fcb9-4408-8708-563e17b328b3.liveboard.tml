@@ -9,33 +9,26 @@ liveboard:
       - id: error_test_ws
         name: error_test_ws
         fqn: 534f1c69-e553-4048-a9b9-ee806a8c4693
-      search_query: "[Product Group Key] [Product Key]"
+      search_query: "[Product Group Key]"
       answer_columns:
       - name: Product Group Key
-      - name: Product Key
       table:
         table_columns:
         - column_id: Product Group Key
           headline_aggregation: COUNT_DISTINCT
-        - column_id: Product Key
-          headline_aggregation: COUNT_DISTINCT
         ordered_column_ids:
         - Product Group Key
-        - Product Key
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
       chart:
-        type: SCATTER
+        type: KPI
         chart_columns:
         - column_id: Product Group Key
-        - column_id: Product Key
         axis_configs:
-        - x:
+        - "y":
           - Product Group Key
-          "y":
-          - Product Key
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Group Key\",\"columnProperty\": {}},{\"columnId\": \"Product Key\",\"columnProperty\": {}},{\"columnId\": \"47c779c3-7a32-4739-931e-0d70e2885d37\",\"columnProperty\": {}},{\"columnId\": \"d39aa12e-50de-4d49-add7-32ce61e56052\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"b310ee8c-2d86-477c-bb8d-661f6285d0b5\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Product Key\"],\"isOpposite\": false}},{\"id\": \"43762bae-38d9-4a52-97ef-c1c27e360df4\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Group Key\"]}}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Product Group Key\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"407f582a-6d80-4def-93d3-32de09a04c4d\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Product Group Key\"],\"isOpposite\": false}},{\"id\": \"e704a8b4-54d4-412b-87e7-e3613ca30a98\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: TABLE_MODE
     viz_guid: 23955408-32eb-4071-ad77-6c2c612ca7f1
   layout:
