@@ -75,3 +75,13 @@ liveboard:
       values:
       - almond
     is_public: false
+  - view_guid: 4c52e268-667b-4e87-a492-8fcc6e41b7e0
+    name: asdadasd
+    view_filters:
+    - column:
+      - Color
+      oper: in
+      values:
+      - almond
+      - blush
+    is_public: false
