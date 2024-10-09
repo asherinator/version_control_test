@@ -1,6 +1,6 @@
 guid: a2d59a79-653e-430a-bc57-3c525ce580b8
 answer:
-  name: Total Discount by Color
+  name: testing_delete
   tables:
   - id: Parameters WS
     name: Parameters WS
