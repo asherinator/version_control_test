@@ -1,0 +1,38 @@
+guid: 99698dec-2315-4d52-b0f3-2b223299aa4f
+liveboard:
+  name: UNIQUE-asher.shaji-afd5j3
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: UNIQUE-asher.shaji-594589
+      tables:
+      - id: UNIQUE-asher.shaji-UI-WS
+        name: UNIQUE-asher.shaji-UI-WS
+        fqn: 57f32f64-910d-4855-a5b7-5165b2f9d58f
+      search_query: "[Lo Commitdate] [Lo Commitdate].monthly [Lo Orderdate] [Lo Orderdate].monthly"
+      answer_columns:
+      - name: Month(Lo Commitdate)
+      - name: Month(Lo Orderdate)
+      table:
+        table_columns:
+        - column_id: Month(Lo Commitdate)
+          headline_aggregation: MIN-MAX
+        - column_id: Month(Lo Orderdate)
+          headline_aggregation: MIN-MAX
+        ordered_column_ids:
+        - Month(Lo Commitdate)
+        - Month(Lo Orderdate)
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: KPI
+        chart_columns:
+        - column_id: Month(Lo Commitdate)
+        - column_id: Month(Lo Orderdate)
+        axis_configs:
+        - "y":
+          - Month(Lo Commitdate)
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Month(Lo Commitdate)\",\"columnProperty\": {}},{\"columnId\": \"Month(Lo Orderdate)\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"9e39dbac-6bca-47ec-8446-5977440d3585\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Month(Lo Commitdate)\"],\"isOpposite\": false}},{\"id\": \"9c2b3334-4988-4aa8-a4c5-f36482c5c5d7\",\"properties\": {\"axisType\": \"X\"}}]}"
+      display_mode: TABLE_MODE
+    viz_guid: e71d4b39-2e48-42f1-9608-f1a2476f5a41
