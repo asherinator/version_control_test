@@ -4,7 +4,7 @@ liveboard:
   visualizations:
   - id: Viz_1
     answer:
-      name: test title 1
+      name: t
       tables:
       - id: Parameters WS
         name: Parameters WS
