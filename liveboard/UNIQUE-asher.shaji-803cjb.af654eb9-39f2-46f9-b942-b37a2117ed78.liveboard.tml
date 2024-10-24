@@ -4,7 +4,7 @@ liveboard:
   visualizations:
   - id: Viz_1
     answer:
-      name: UNIQUE-asher.shaji-iiech4
+      name: test title 1
       tables:
       - id: UNIQUE-asher.shaji-UI-WS
         name: UNIQUE-asher.shaji-UI-WS
@@ -36,3 +36,7 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Quarter(Lo Commitdate)\",\"columnProperty\": {}},{\"columnId\": \"Quarter(Lo Orderdate)\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"a292494e-1a51-4a6b-95e3-9ad56aec2a02\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Quarter(Lo Commitdate)\"],\"isOpposite\": false}},{\"id\": \"89efea5f-4123-459a-9f73-9a558183888d\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: TABLE_MODE
     viz_guid: 8ff6ba81-e652-427d-8713-be87083ec7c9
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: LARGE
