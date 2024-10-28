@@ -191,3 +191,8 @@ liveboard:
     value:
       name: Parameters WS::Integer Range Param
       override_value: "5"
+  ordered_chips:
+  - name: Parameters WS::Date List Param
+    type: PARAMETER
+  - name: Parameters WS::Integer Range Param
+    type: PARAMETER
