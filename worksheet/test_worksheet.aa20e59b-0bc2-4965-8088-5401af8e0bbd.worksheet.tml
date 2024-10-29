@@ -9,7 +9,7 @@ worksheet:
     table: LINEORDER
   formulas:
   - name: test
-    expr: "[LINEORDER_1::Quantity] * 2"
+    expr: "0"
     was_auto_generated: false
   worksheet_columns:
   - name: Order Date
