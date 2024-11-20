@@ -9,33 +9,33 @@ liveboard:
       - id: Parameters WS
         name: Parameters WS
         fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
-      search_query: "[Discount] [Color]"
+      search_query: "[Discount] [Category]"
       answer_columns:
-      - name: Color
+      - name: Category
       - name: Total Discount
       table:
         table_columns:
-        - column_id: Color
+        - column_id: Category
           headline_aggregation: COUNT_DISTINCT
         - column_id: Total Discount
           headline_aggregation: SUM
         ordered_column_ids:
-        - Color
+        - Category
         - Total Discount
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
       chart:
         type: COLUMN
         chart_columns:
-        - column_id: Color
+        - column_id: Category
         - column_id: Total Discount
         axis_configs:
         - x:
-          - Color
+          - Category
           "y":
           - Total Discount
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"50d44ac8-15ed-436e-87c3-091ba9bd20d6\",\"columnProperty\": {}},{\"columnId\": \"cb56dffb-3c48-45e5-afb6-1450c0f86be5\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8b766a15-2fa0-4bc5-ab1b-0a0844b6d152\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"acd34009-25d9-482b-9926-b242e6e7b969\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Color\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#747E8C\"}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"7e1c2d5f-f12a-41f2-8dc9-2d04930d5cc4\",\"columnProperty\": {}},{\"columnId\": \"686220e6-cb5f-4780-8163-f5311fe38a48\",\"columnProperty\": {}},{\"columnId\": \"Category\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"8d3c6635-3a14-4bdd-8617-119e00206b67\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"10af18af-edda-49f4-b548-7026364e3608\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#747E8C\"}]}"
       display_mode: CHART_MODE
     viz_guid: 2f7d076d-4a20-4166-9559-79c29fee190b
   layout:
