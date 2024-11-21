@@ -9,33 +9,37 @@ liveboard:
       - id: Parameters WS
         name: Parameters WS
         fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
-      search_query: "[test_formula] [Extended Price]"
+      search_query: "[Discount] [test_formula]"
       answer_columns:
-      - name: Total Extended Price
+      - name: Total Discount
       - name: Total test_formula
       table:
         table_columns:
-        - column_id: Total Extended Price
+        - column_id: Total Discount
           headline_aggregation: SUM
         - column_id: Total test_formula
           headline_aggregation: TABLE_AGGR
         ordered_column_ids:
+        - Total Discount
         - Total test_formula
-        - Total Extended Price
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
       chart:
         type: KPI
         chart_columns:
-        - column_id: Total Extended Price
+        - column_id: Total Discount
         - column_id: Total test_formula
         axis_configs:
         - "y":
-          - Total test_formula
+          - Total Discount
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total test_formula\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"42ca803e-4fd6-4361-bbdc-b73fe06f5198\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total test_formula\"],\"isOpposite\": false}},{\"id\": \"6e80a903-67e6-45ea-81e8-48c2e21bdf78\",\"properties\": {\"axisType\": \"X\"}}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Total test_formula\",\"columnProperty\": {}},{\"columnId\": \"93e51e1b-da8b-489e-acfe-ccd4e5925429\",\"columnProperty\": {}},{\"columnId\": \"45b1a766-1eb2-4922-8968-3de5fa19e524\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"c059c5ba-42c2-4daa-8752-8aded3e63ab2\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"8cf2f60f-16bd-4a9c-9060-2cec262bfdcd\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: b826bb5b-d783-4c52-9347-de80c4b61b55
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: EXTRA_SMALL
   parameter_overrides:
   - key: acc45d99-411f-4e4b-836d-a3a696297a75
     value:
