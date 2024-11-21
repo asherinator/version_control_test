@@ -39,6 +39,9 @@ worksheet:
   - name: Username
     expr: ts_username
     was_auto_generated: false
+  - name: test_formula
+    expr: "[LINEORDER_1::Quantity] * [test_param]"
+    was_auto_generated: false
   worksheet_columns:
   - name: Line Number
     column_id: LINEORDER_1::Line Number
@@ -178,6 +181,12 @@ worksheet:
       column_type: MEASURE
       aggregation: SUM
       index_type: DONT_INDEX
+  - name: test_formula
+    formula_id: test_formula
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
   properties:
     is_bypass_rls: false
     join_progressive: true
@@ -273,28 +282,6 @@ worksheet:
       include_min: true
       include_max: true
     description: Double parameter with range value selection.
-  - id: 3e2d9e2d-e4e6-4319-8814-61d31f9b5fc5
-    name: Integer List Param
-    data_type: INT64
-    default_value: "3"
-    list_config:
-      list_choice:
-      - value: "1"
-        display_name: One
-      - value: "2"
-        display_name: Two
-      - value: "3"
-        display_name: Three
-      - value: "4"
-        display_name: Four
-      - value: "5"
-        display_name: Five
-    description: Integer parameter with list value selection.
-  - id: db95c261-9e31-41fc-b9d9-4059062fc26f
-    name: Integer Param
-    data_type: INT64
-    default_value: "1"
-    description: Integer parameter with any value selection.
   - id: 6afe392d-d188-4379-aef3-1a8632e147c8
     name: Integer Range Param
     data_type: INT64
@@ -325,3 +312,8 @@ worksheet:
     data_type: CHAR
     default_value: default
     description: String parameter with any value selection.
+  - id: acc45d99-411f-4e4b-836d-a3a696297a75
+    name: test_param
+    data_type: INT64
+    default_value: "2"
+    description: ""
