@@ -40,10 +40,6 @@ worksheet:
     expr: ts_username
     was_auto_generated: false
   worksheet_columns:
-  - name: Orderkey
-    column_id: LINEORDER_1::OrderKey
-    properties:
-      column_type: ATTRIBUTE
   - name: Line Number
     column_id: LINEORDER_1::Line Number
     properties:
