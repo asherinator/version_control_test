@@ -1,0 +1,33 @@
+guid: cb611906-86ea-478a-b498-8e8b4b16b8d4
+answer:
+  name: transient_answer
+  tables:
+  - id: Parameters WS
+    name: Parameters WS
+    fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
+  search_query: "[Discount] [test_formula]"
+  answer_columns:
+  - name: Total Discount
+  - name: Total test_formula
+  table:
+    table_columns:
+    - column_id: Total Discount
+      headline_aggregation: SUM
+    - column_id: Total test_formula
+      headline_aggregation: TABLE_AGGR
+    ordered_column_ids:
+    - Total Discount
+    - Total test_formula
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: KPI
+    chart_columns:
+    - column_id: Total Discount
+    - column_id: Total test_formula
+    axis_configs:
+    - "y":
+      - Total Discount
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_OFF\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f643af68-06a0-4688-92d5-9d9fe9a7cce4\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"e01f5aea-d431-49d4-bd74-9a6def915b83\",\"properties\": {\"axisType\": \"X\"}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#06BF7F\"}]}"
+  display_mode: CHART_MODE
