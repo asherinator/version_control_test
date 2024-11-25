@@ -9,31 +9,31 @@ liveboard:
       - id: Parameters WS
         name: Parameters WS
         fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
-      search_query: "[Discount] [test_formula]"
+      search_query: "[test_formula] [Quantity]"
       answer_columns:
-      - name: Total Discount
+      - name: Total Quantity
       - name: Total test_formula
       table:
         table_columns:
-        - column_id: Total Discount
+        - column_id: Total Quantity
           headline_aggregation: SUM
         - column_id: Total test_formula
           headline_aggregation: TABLE_AGGR
         ordered_column_ids:
-        - Total Discount
         - Total test_formula
+        - Total Quantity
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
       chart:
         type: KPI
         chart_columns:
-        - column_id: Total Discount
+        - column_id: Total Quantity
         - column_id: Total test_formula
         axis_configs:
         - "y":
-          - Total Discount
+          - Total test_formula
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Total test_formula\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"842bbaf8-e0a0-42d2-b1d4-07b2b7ccc246\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"6eaefc2f-fc1a-4a02-a2bf-9ac28ce711f5\",\"properties\": {\"axisType\": \"X\"}}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total test_formula\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4eff1486-9aee-4270-b6df-7aded988f9a0\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total test_formula\"],\"isOpposite\": false}},{\"id\": \"5fcefb8b-f1e1-4a21-99a3-4140da52de6c\",\"properties\": {\"axisType\": \"X\"}}]}"
       display_mode: CHART_MODE
     viz_guid: be819d3c-ec64-4aa5-81fe-395e14b5d9cc
   parameter_overrides:
