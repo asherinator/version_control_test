@@ -39,9 +39,6 @@ worksheet:
   - name: Username
     expr: ts_username
     was_auto_generated: false
-  - name: test_formula
-    expr: "[test_param] * [LINEORDER_1::Quantity]"
-    was_auto_generated: false
   worksheet_columns:
   - name: Orderkey
     column_id: LINEORDER_1::OrderKey
@@ -181,12 +178,6 @@ worksheet:
       index_type: DONT_INDEX
   - name: Org Masked Revenue
     formula_id: Org Masked Revenue
-    properties:
-      column_type: MEASURE
-      aggregation: SUM
-      index_type: DONT_INDEX
-  - name: test_formula
-    formula_id: test_formula
     properties:
       column_type: MEASURE
       aggregation: SUM
@@ -338,8 +329,3 @@ worksheet:
     data_type: CHAR
     default_value: default
     description: String parameter with any value selection.
-  - id: d60eeb58-ad3d-4cb1-933d-1d4574be86e9
-    name: test_param
-    data_type: INT64
-    default_value: "2"
-    description: ""
