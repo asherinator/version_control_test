@@ -9,32 +9,36 @@ liveboard:
       - id: Parameters WS
         name: Parameters WS
         fqn: 540c4503-5bc7-4727-897b-f7f4d78dd2ff
-      search_query: "[Discount] [Category]"
+      search_query: "[Discount] [Color]"
       answer_columns:
-      - name: Category
+      - name: Color
       - name: Total Discount
       table:
         table_columns:
-        - column_id: Category
+        - column_id: Color
           headline_aggregation: COUNT_DISTINCT
         - column_id: Total Discount
           headline_aggregation: SUM
         ordered_column_ids:
-        - Category
+        - Color
         - Total Discount
         client_state: ""
-        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Total Discount\",\"columnProperty\": {}}]}"
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\",\"columnProperties\": [{\"columnId\": \"Color\",\"columnProperty\": {}},{\"columnId\": \"Total Discount\",\"columnProperty\": {}}]}"
       chart:
         type: COLUMN
         chart_columns:
-        - column_id: Category
+        - column_id: Color
         - column_id: Total Discount
         axis_configs:
         - x:
-          - Category
+          - Color
           "y":
           - Total Discount
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Measure names\",\"columnProperty\": {}},{\"columnId\": \"Measure values\",\"columnProperty\": {}},{\"columnId\": \"Category\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2751fc8e-5110-442b-bd68-9a49e805f95e\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"6043ea21-2ef9-41dc-a679-e1706cb6b95d\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Category\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Discount\",\"color\": \"#747E8C\"}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Total Discount\",\"columnProperty\": {}},{\"columnId\": \"Color\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"9be0e7e1-6595-4a15-9f0a-ed6f1a5ec25f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Discount\"],\"isOpposite\": false}},{\"id\": \"1d1eccdb-a5f6-4807-b234-5a7c04c34e99\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Color\"]}}]}"
       display_mode: CHART_MODE
     viz_guid: 5c60c4a5-ff28-48a8-8762-7475d6596dc2
+  layout:
+    tiles:
+    - visualization_id: Viz_1
+      size: MEDIUM
